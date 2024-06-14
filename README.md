@@ -1,4 +1,4 @@
-**LINK TO GITHUB REPOSITORY:**
+**LINK TO GITHUB REPOSITORY:**https://github.com/Vutlhari-Mabasa/PROG6221-POE.git
 
 ---
 
