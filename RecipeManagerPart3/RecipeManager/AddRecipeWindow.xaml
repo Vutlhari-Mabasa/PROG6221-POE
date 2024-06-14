@@ -1,0 +1,27 @@
+﻿<Window x:Class="RecipeManager.AddRecipeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeManager"
+        mc:Ignorable="d"
+       Title="Add Recipe" Height="450" Width="603">
+    <Grid Margin="10"  Background="DarkGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock><Run Text="ENTER RECIPE NAME:"/></TextBlock>
+            <TextBox x:Name="RecipeName" Margin="5" ToolTip="Recipe Name"/>
+            <TextBlock><Run Text="ENTER NUMBER OF INGREDIENT :"/></TextBlock>
+            <TextBox x:Name="NumIngredients" Margin="5" ToolTip="Number of Ingredients"/>
+            <TextBlock><Run Text="ENTER NUMBER STEPS:"/></TextBlock>
+            <TextBox x:Name="NumSteps" Margin="5" ToolTip="Number of Steps"/>
+        </StackPanel>
+
+        <Button Content="Add" Grid.Row="2" HorizontalAlignment="Center" Click="AddButton_Click" Margin="5" Background="MistyRose"/>
+    </Grid>
+</Window>

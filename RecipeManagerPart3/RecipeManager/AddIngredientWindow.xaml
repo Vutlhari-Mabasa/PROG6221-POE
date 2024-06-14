@@ -1,0 +1,33 @@
+﻿<Window x:Class="RecipeManager.AddIngredientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RecipeManager"
+        mc:Ignorable="d"
+         Title="Add Ingredient" Height="505" Width="720">
+    <Grid Margin="10" Background="DarkGray">
+        <StackPanel>
+            <TextBlock><Run Text="ENTER INGREDIENT NAME:"/></TextBlock>
+            <TextBox x:Name="IngredientName" Margin="5" ToolTip="Ingredient Name"/>
+            <TextBlock><Run Text="ENTER QUANTITY:"/></TextBlock>
+            <TextBox x:Name="Quantity" Margin="5" ToolTip="Quantity"/>
+            <TextBlock><Run Text="ENTER UNIT OF MEASUREMENT:"/></TextBlock>
+            <TextBox x:Name="Unit" Margin="5" ToolTip="Unit"/>
+            <TextBlock><Run Text="ENTER NUMBER OF CALORIES:"/></TextBlock>
+            <TextBox x:Name="Calories" Margin="5" ToolTip="Calories"/>
+            <TextBlock><Run Text="CHOOSE FOOD GROUP:"/></TextBlock>
+            <ComboBox  x:Name="FoodGroup" Margin="5" ToolTip="Food Group" >
+
+                <ComboBoxItem Content="Carbohydrates"/>
+                <ComboBoxItem Content="Protein"/>
+                <ComboBoxItem Content="Dairy products"/>
+                <ComboBoxItem Content="Fruits and Vegitables"/>
+                <ComboBoxItem Content="Fats and Oil"/>
+
+            </ComboBox>
+        </StackPanel>
+
+        <Button Content="Add" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="AddButton_Click" Margin="5" Background="MistyRose"/>
+    </Grid>
+</Window>
